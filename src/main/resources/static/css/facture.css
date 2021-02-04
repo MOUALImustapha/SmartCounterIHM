@@ -1,0 +1,101 @@
+
+*{
+	font-family: Arial;
+}
+.nopadding-left {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.nopadding-right {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+.nopadding-top {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.nopadding-bottom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.nopadding-x {
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+#facture {
+    border: 1px black solid;
+    font-size: 12px;
+}
+#facture table{
+	width:100%;
+	table-layout: fixed;
+	
+}
+
+
+.designation {
+    width: 16%;
+}
+
+.description {
+    width: 16%;
+}
+
+.prix {
+    width: 12%;
+}
+
+.quantite {
+    width: 8%;
+}
+
+.tva {
+    width: 6%;
+}
+
+.remise {
+    width: 8%;
+}
+
+.mht {
+    width: 14%;
+
+}
+
+.m {
+    width: 14%;
+ 
+}
+
+#facture table th,#facture table td{
+	padding: 2px;
+}
+#logo,
+#dateAndIdFacture {
+    height: 20mm;
+    border-bottom: 1px black solid;
+}
+
+.data {
+    color: orangered
+}
+
+hr {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: absolute;
+    bottom: 10mm;
+}

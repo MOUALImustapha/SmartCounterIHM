@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Login</title>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<link href="/css/AdminLogin.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper fadeInDown">
+		<div id="formContent">
+			<!-- Tabs Titles -->
+
+			<!-- Icon -->
+			<div class="fadeIn first">
+				<img src="/images/logo.png" id="icon" alt="User Icon" />
+			</div>
+
+			<!-- Login Form -->
+			<form method="post" th:action="@{/userlogin}">
+				<div th:if="${param.error}" class="alert alert-error">    
+                    Invalid username and password.
+                </div>
+				<input type="text" id="login" class="fadeIn second" name="username"
+					placeholder="login"> <input type="password" id="password"
+					class="fadeIn third" name="password" placeholder="password">
+				<input type="submit" class="fadeIn fourth">
+			</form>
+
+			<!-- Remind Passowrd -->
+			<div id="formFooter">
+				<a class="underlineHover" href="#">Forgot Password?</a>
+			</div>
+
+		</div>
+	</div>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
