@@ -1,0 +1,2 @@
+# SmartCounterIHM
+Projet industriel
